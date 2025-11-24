@@ -1,0 +1,19 @@
+.promo {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 40px;
+  background: #fafafa;
+}
+
+.promo-text {
+  max-width: 40%;
+}
+
+.promo-text h2 {
+  margin: 10px 0 20px;
+}
+
+.promo-img {
+  width: 45%;
+  border-radius: 6px;
+}

@@ -1,0 +1,25 @@
+.testimonial {
+  background: #111;
+  color: white;
+  padding: 80px 40px;
+  position: relative;
+}
+
+.quote-box {
+  max-width: 60%;
+  margin: auto;
+  font-size: 20px;
+}
+
+.testimonial-user {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}

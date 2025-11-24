@@ -1,0 +1,31 @@
+
+.stats-container {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+}
+
+.stats-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stats {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  display: flex;
+  gap: 40px;
+  /*color: white;*/
+}
+
+.stats div {
+  text-align: center;
+}
+
+.stats strong {
+  font-size: 26px;
+  display: block;
+}

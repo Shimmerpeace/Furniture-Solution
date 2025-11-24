@@ -1,6 +1,13 @@
 import "./Home.css";
 import ProductComponent from "../../components/Product/Product";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
+import Stats from "../../components/Stats/Stats";
+import Deals from "../../components/Deals/Deals";
+import PromoBanner from "../../components/PromoBanner/PromoBanner";
+import Testimonial from "../../components/Testimonial/Testimonial";
+import Brands from "../../components/Brands/Brands";
+import News from "../../components/News/News";
+import Footer from "../../components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -90,6 +97,13 @@ export default function Home() {
 
       <ProductComponent />
       <WhyChooseUs />
+      <Stats />
+      <Deals />
+      <PromoBanner />
+      <Testimonial />
+      <Brands />
+      <News />
+      <Footer /> 
     </main>
   );
 }
