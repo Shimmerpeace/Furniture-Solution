@@ -8,12 +8,12 @@ export default function PromoSection() {
         <h3 className="promo-tag">UP TO 30% OFF!</h3>
         <h1 className="promo-title">Perfect Cabinets For Your Living Room!</h1>
         <p className="promo-desc">
-          Get the perfect cabinet design for your living room. Shop amazing
-          limited-time offers.
+          Get the perfect cabinet design for your living room. Shop amazing limited-time offers.
         </p>
         <button className="promo-btn">Shop Now</button>
       </div>
-      <img src={image1} alt="Promo" className="promo-img" />
+      <img src={image1} alt="Promotional cabinet" className="promo-img" />
     </section>
   );
 }
+

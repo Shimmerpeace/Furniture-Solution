@@ -6,10 +6,13 @@
   padding: 60px 50px;
   border-radius: 10px;
   margin: 60px 0;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-.promo-text{
+.promo-text {
   max-width: 500px;
+  flex: 1 1 300px;
 }
 
 .promo-tag {
@@ -34,26 +37,30 @@
   border: none;
   cursor: pointer;
   font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.promo-btn:hover,
+.promo-btn:focus {
+  background-color: #d1a90f;
+  outline: none;
 }
 
 .promo-img {
   width: 420px;
   border-radius: 8px;
   object-fit: cover;
+  flex: 1 1 300px;
+  max-width: 100%;
+  height: auto;
 }
 
-
+/* Responsive adjustments */
 @media (max-width: 900px) {
-  
   .promo-section {
     flex-direction: column;
     text-align: center;
     gap: 30px;
   }
-
-  .promo-img {
-    width: 90%;
-  }
-  
 }
-

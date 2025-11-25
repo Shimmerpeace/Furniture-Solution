@@ -7,7 +7,7 @@ import PromoBanner from "../../components/PromoBanner/PromoBanner";
 import Testimonial from "../../components/Testimonial/Testimonial";
 import Brands from "../../components/Brands/Brands";
 import News from "../../components/News/News";
-import Footer from "../../components/Footer/Footer";
+
 
 export default function Home() {
   return (
@@ -103,7 +103,7 @@ export default function Home() {
       <Testimonial />
       <Brands />
       <News />
-      <Footer /> 
+      
     </main>
   );
 }

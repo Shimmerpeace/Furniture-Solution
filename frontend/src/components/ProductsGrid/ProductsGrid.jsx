@@ -4,9 +4,9 @@ import image8 from "../../assets/image8.jpeg";
 import image9 from "../../assets/image9.jpeg";
 import image10 from "../../assets/image10.jpeg";
 import image11 from "../../assets/image11.jpeg";
-import image12 from "../../assets/image1.jpeg";
-import image13 from "../../assets/image1.jpeg";
-import image14 from "../../assets/image1.jpeg";
+import image12 from "../../assets/image12.jpeg";
+import image13 from "../../assets/image13.jpeg";
+import image14 from "../../assets/image14.jpeg";
 
 import "./ProductsGrid.css";
 
@@ -22,13 +22,14 @@ export default function ProductsGrid() {
     { name: "Stool Beige Ottoman", img: image13 },
     { name: "Adwell Full Sleigh Bed Grey", img: image14 },
   ];
+
   return (
     <section className="products-section">
       <h2 className="section-title">Our Products</h2>
 
       <div className="product-nav-menu">
         <span>Living Room</span>
-        <span> Kitchen</span>
+        <span>Kitchen</span>
         <span>Office</span>
         <span>Bedroom</span>
       </div>
@@ -36,7 +37,7 @@ export default function ProductsGrid() {
       <div className="products-grid">
         {products.map((product, index) => (
           <div className="product-card" key={index}>
-            <img src={product.img} alt="" className="product-img" />
+            <img src={product.img} alt={product.name} className="product-img" />
             <p className="product-name">{product.name}</p>
           </div>
         ))}

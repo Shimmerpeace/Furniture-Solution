@@ -1,6 +1,14 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./NavBar.css";
 
 export default function NavBar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  function handleLinkClick() {
+    setMenuOpen(false);
+  }
+
   return (
     <header>
       <div className="top-bar">
@@ -16,28 +24,58 @@ export default function NavBar() {
           <div className="logo-circle"></div>
           <span className="brand">sea</span>
         </div>
-        <ul className="nav-links">
+
+        <button
+          className={`menu-icon${menuOpen ? " open" : ""}`}
+          onClick={() => setMenuOpen((prev) => !prev)}
+          aria-label="Toggle navigation"
+          aria-expanded={menuOpen}
+          aria-controls="primary-navigation"
+        >
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </button>
+
+        <ul
+          id="primary-navigation"
+          className={`nav-links${menuOpen ? " active" : ""}`}
+        >
           <li>
-            <a href="/">Home</a>
+            <Link to="/" onClick={handleLinkClick}>
+              Home
+            </Link>
           </li>
           <li>
-            <a href="/">Products</a>
+            <Link to="/products" onClick={handleLinkClick}>
+              Products
+            </Link>
           </li>
           <li>
-            <a href="/">About Us</a>
+            <Link to="/about-us" onClick={handleLinkClick}>
+              About Us
+            </Link>
           </li>
           <li>
-            <a href="/">Trending</a>
+            <Link to="/trending" onClick={handleLinkClick}>
+              Trending
+            </Link>
           </li>
           <li>
-            <a href="/">Deals</a>
+            <Link to="/deals" onClick={handleLinkClick}>
+              Deals
+            </Link>
           </li>
           <li>
-            <a href="/">Contact Us</a>
+            <Link to="/contact-us" onClick={handleLinkClick}>
+              Contact Us
+            </Link>
           </li>
         </ul>
+
         <button className="sign-in">Sign In</button>
       </nav>
     </header>
   );
 }
+

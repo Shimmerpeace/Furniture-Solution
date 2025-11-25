@@ -21,6 +21,14 @@
   border: 1px solid #ccc;
   background: white;
   cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover,
+.carousel-btn:focus {
+  background-color: #f0f0f0;
+  outline: none;
 }
 
 .featured-list {
@@ -28,11 +36,30 @@
   gap: 25px;
   overflow-x: auto;
   padding: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.featured-list::-webkit-scrollbar {
+  height: 8px;
+}
+
+.featured-list::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
 }
 
 .featured-card {
   min-width: 180px;
   text-align: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  outline-offset: 2px;
+}
+
+.featured-card:focus {
+  outline: 2px solid #2563eb;
+  border-radius: 6px;
 }
 
 .featured-img {
@@ -52,3 +79,4 @@
   font-weight: bold;
   font-size: 14px;
 }
+

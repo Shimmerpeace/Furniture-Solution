@@ -1,13 +1,8 @@
-
 import "./WhyChooseUs.css";
 
 export default function WhyChooseUs() {
-  
-
   return (
     <section className="why-container">
-      
-
       <div className="why-header">
         <h2>Why Choose Us</h2>
         <p>
@@ -25,7 +20,7 @@ export default function WhyChooseUs() {
             Skilled artisans handcraft each piece with meticulous attention to
             detail, ensuring durability and timeless appeal.
           </p>
-          <div className="why-icon">[icon]</div>
+          <div className="why-icon" aria-label="Precision icon" role="img">[icon]</div>
         </div>
 
         <div className="why-card">
@@ -58,3 +53,4 @@ export default function WhyChooseUs() {
     </section>
   );
 }
+

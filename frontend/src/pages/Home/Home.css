@@ -21,7 +21,7 @@
 }
 
 .top-margin-wrapper {
-  padding: 70px;
+padding: 4rem 2rem;
 }
 
 .top-margin-wrapper h1 {
@@ -72,7 +72,7 @@
 }
 
 .bottom-margin-wrapper {
-  padding: 0 70px 70px 70px;
+  padding: 0 2rem 4rem 2rem;
 }
 
 .yellow-banner {
@@ -128,7 +128,8 @@ background-color: #f7c80f;
 
 .card-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+ /* grid-template-columns: 1fr 1fr;*/
+   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   margin-top: 2.5rem;
 }
@@ -172,4 +173,19 @@ background-color: #f7c80f;
 
 .office {
   background-image: url("../../assets/office.jpeg");
+}
+
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: 1fr; /* single column on small devices */
+  }
+
+  .top-margin-wrapper,
+  .bottom-margin-wrapper {
+    padding: 2rem 1rem;
+  }
+
+  .top-margin-wrapper h1 {
+    font-size: 2rem;
+  }
 }
